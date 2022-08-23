@@ -7,8 +7,8 @@ jobs:
     name: Push to Expo Go on Pull Requests
     runs-on: ubuntu-latest
     env:
-      PR_BRANCH: expoPreview
-      EXPO_PROJECT: '@jarmy/expoPreview'
+      PR_BRANCH: brownbagexpo
+      EXPO_PROJECT: '@jarmy/brownbagexpo'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
