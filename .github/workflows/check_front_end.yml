@@ -15,10 +15,9 @@ jobs:
       - uses: c-hive/gha-yarn-cache@v2
         with:
           persist-credentials: false
-          directory: ./server
       - name: Install node modules
-        run: cd server && yarn install
+        run: yarn install
       - name: lint
-        run: cd server && yarn lint
+        run: yarn lint
       - name: test-check
-        run: cd server && yarn test
+        run: yarn test
