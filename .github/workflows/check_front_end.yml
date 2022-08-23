@@ -19,5 +19,3 @@ jobs:
         run: yarn install
       - name: lint
         run: yarn lint
-      - name: test-check
-        run: yarn test
