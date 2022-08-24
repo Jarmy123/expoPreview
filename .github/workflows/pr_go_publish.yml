@@ -1,16 +1,13 @@
 name: Publish on Pull Request
 
-on:
-  push:
-    paths:
-      - example-expo/**
-      - src/**
+on: [push]
+
 jobs:
   pr_build:
     name: Push to Expo Go on Pull Requests
     runs-on: ubuntu-latest
     env:
-      PR_BRANCH: example-expo
+      PR_BRANCH: brownbagexpo
       EXPO_PROJECT: '@jarmy/brownbagexpo'
     steps:
       - uses: actions/checkout@v2
